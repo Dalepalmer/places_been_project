@@ -1,0 +1,17 @@
+<h1>Places I have been</h1>
+
+<p>Here is my list of places</p>
+
+<ul>
+  <% @locations.each() do |location| %>
+  <li><%= location.location() %></li>
+  <% end %>
+</ul>
+
+<p>List a place you've been</p> 
+<form action="/confirmation" method="post">
+  <label for="location">Task Description</label>
+  <input id="location" name="location" type="text">
+
+  <button type="submit">Add task</button>
+</form>
