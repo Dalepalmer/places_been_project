@@ -13,3 +13,8 @@ post('/confirmation') do
   location.save()
   erb(:confirmation)
 end
+
+post('/clear') do
+  Place.clear()
+  redirect ('/')
+end

@@ -10,8 +10,14 @@
 
 <p>List a place you've been</p>
 <form action="/confirmation" method="post">
-  <label for="location">Location</label>
-  <input id="location" name="location" type="text">
+
+  <div class="form-group">
+    <label for="location">Location</label>
+    <input id="location" name="location" class="form-control" type="text">
+  </div>
 
   <button type="submit">Add location</button>
+</form>
+<form action="/clear" method="post">
+  <button type="submit">Clear list</button>
 </form>
